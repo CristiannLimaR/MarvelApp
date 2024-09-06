@@ -1,7 +1,7 @@
 import { useCharacters } from "../hooks/useCharacters";
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import { GridCharacters } from "./GridCharacters";
+import {GridCharacters} from './GridCharacters'
 import { useState} from "react";
 import { SearchCharacter } from "./SearchCharacter";
 
@@ -11,7 +11,7 @@ export const MarvelApp = () => {
   const { characters, total } = useCharacters(currentpage, searchCharacter);
 
   const handleSearch = (character) => {
-    setSearchCharacter(character); // Actualiza el término de búsqueda
+    setSearchCharacter(character); 
   };
   
 
